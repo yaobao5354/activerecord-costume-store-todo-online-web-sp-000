@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2) do
+ActiveRecord::Schema.define(version: 3) do
 
   create_table "costumes", force: :cascade do |t|
     t.string "name"
@@ -29,6 +29,17 @@ ActiveRecord::Schema.define(version: 2) do
     t.boolean "in_business"
     t.datetime "opening_time"
     t.datetime "closing_time"
+  end
+
+  create_table "haunted_houses", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.string "theme"
+    t.float "price"
+    t.boolean "family_member"
+    t.datetime "opening_date"
+    t.datetime "closing_date"
+    t.string "long_description"
   end
 
 end
