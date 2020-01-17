@@ -1,6 +1,9 @@
 # Create a class and inherit from ActiveRecord::Migration
+require 'pry'
+
 class CreateCostumes < ActiveRecord::Migration[5.2]
   def change
+    binding.pry
    create_table :costumes do |t|
      t.string :name
      t.float :price
