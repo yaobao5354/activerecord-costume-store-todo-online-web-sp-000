@@ -1,6 +1,8 @@
 # Create your costume_stores migration here
+require 'pry'
 class CreateCostumeStores < ActiveRecord::Migration[5.2]
   def change
+    binding.pry
    create_table :costume_stores do |t|
      t.string :name
      t.string :location
