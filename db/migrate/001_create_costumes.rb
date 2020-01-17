@@ -3,13 +3,13 @@ require 'pry'
 
 class CreateCostumes < ActiveRecord::Migration[5.2]
   def change
-    binding.pry
    create_table :costumes do |t|
      t.string :name
      t.float :price
      t.string :size
      t.string :image_url
      t.timestamps
+   end
   end
 end
 # By convention, the class name should match the part of the
